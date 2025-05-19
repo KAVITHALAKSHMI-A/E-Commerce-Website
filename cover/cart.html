@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="cart.css">
+        <link rel="shortcut icon" href="https://img.freepik.com/free-vector/shopping-cart-supermarket-logo-template_23-2148470295.jpg?w=740&t=st=1711887639~exp=1711888239~hmac=a4afe6f6bc4a6dbba85455a103672b94849e93c59375d1c6bf06b6c5f89c6521" type="image/x-icon">
+
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <title>FreshMart</title>
+    </head>
+    <body>
+        <header class="btn">
+            <a href="http://localhost:5000/"><button class="close"><h5 class="m-0 padding-bottom-2 col-12 col-md-4" style="color: aliceblue;">Close x</h5></button></a>
+          </header>
+        <div class="header">
+            <p class="logo">FreshMart</p>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+        </div>
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                   
+                    <h3>Total</h3>
+                    <form action="pay.html">
+                    <h2 id="total" >$ 0.00</h2>
+                    <br><br><br>
+                </form>
+                    
+                </div>
+                <form action="" method="get">
+                    <div class="btn"><div class="margin-bottom-4"></div>
+                    <label for="payment_method" class="label">Payment Method:</label>
+                    <input type="radio" value="Cash On Delivery">
+                    <label for="payment_method" class="label">Cash On Delivery</label>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <input type="submit" onclick="placeOrder()" value="Place Order" class="button">
+                </form>
+            </div>
+                <!-- <div class="btn"><div class="margin-bottom-4"></div>
+                <button class="mt-4 checkOut" onclick="placeorder()">Place Order</button>
+            </div> -->
+        </div>
+            </div>
+            </div>
+                <!-- <div class="btn"><div class="margin-bottom-4">
+                    <form action="pay.html">
+                    <a href="pay.html"><button class="mt-4 checkOut" onclick="getTxt()">Check Out</button></a>
+                </form>
+                </div>
+            </div> -->
+        </div>
+        <script src="cart.js"></script>
+    </body>
+</html>
